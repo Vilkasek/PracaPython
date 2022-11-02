@@ -29,12 +29,21 @@ def zadanie_trzecie_for(n, suma):
     for i in range(1, n+1):
         suma = suma + i
     
-    print(suma)
+    print("Zadanie trzecie:\n", suma)
 
 def zadanie_trzecie_while(n, suma):
-    i = 0
-    while i < n:
+    i = 1
+    while i < n + 1:
+        # if i <= 0:
+        #     j = i + 1
+        # else:
+        #     j = i
+
+        j = i
+
+        suma = suma + j
         i = i + 1
-        print(i)
+
+    print(suma)
 
 __name__ = main()
