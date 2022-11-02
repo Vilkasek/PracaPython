@@ -75,4 +75,5 @@ def zadanie_piate(suma, iloczyn):
             iloczyn = iloczyn * i
         print(iloczyn)
 
-main()
+
+__name__ = main()
