@@ -64,7 +64,9 @@ def zadanie_piate(suma, iloczyn):
     # Szybkie wyjaśnienie, dlaczego użyłem if i elif
     # Jest to spowodowane tak samo jak brak pętli do...while brakiem takowej funkcji
     # Fakt faktem mogłem zaimportować zewnętrzną bibliotekę, która zezwalała mi na użycie tej funkcji
-    # Dlaczego więc tego nie zrobiłem? Pomijając nieczytelną dokumentację, chciałem jednak ograniczyć się do czystego Pythona
+    # Dlaczego więc tego nie zrobiłem?
+    # Pomijając nieczytelną dokumentację, chciałem jednak ograniczyć się do czystego Pythona
+
     if choose == 1:
         zadanie_trzecie_while(suma)
     elif choose == 2:
