@@ -34,11 +34,6 @@ def zadanie_trzecie_for(n, suma):
 def zadanie_trzecie_while(n, suma):
     i = 1
     while i < n + 1:
-        # if i <= 0:
-        #     j = i + 1
-        # else:
-        #     j = i
-
         j = i
 
         suma = suma + j
