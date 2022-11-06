@@ -6,8 +6,21 @@ def check(x, y):
         return True
 
 
-def ideal(x, y):
-    pass
+def divides(n):
+    d = []
+    for i in range(1, int((n/2) + 1)):
+        if n % i == 0:
+            d.append(i)
+    return d
+
+
+def ideal(n):
+    suma = 0
+    for i in divides(n):
+        suma += i
+
+    if suma == n:
+        print(n, "to liczba doskonała.")
 
 
 def main():
@@ -16,7 +29,8 @@ def main():
         b = int(input("Podaj koniec ciągu, ale mniejszy od 50000: "))
 
         if check(a, b):
-            pass
+            for i in range(a, b + 1):
+                ideal(i)
 
 
 main()
