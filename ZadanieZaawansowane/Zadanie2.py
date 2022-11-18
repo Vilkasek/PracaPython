@@ -5,7 +5,8 @@ def palindrome(n):
     i = int(i)
     while i:
         i -= 1
-        if n[i] != n[-i-1]: return False
+        if n[i] != n[-i-1]:
+            return False
     return True
 
 def main():
