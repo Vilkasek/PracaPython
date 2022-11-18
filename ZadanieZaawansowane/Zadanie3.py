@@ -4,12 +4,24 @@ def main():
     quote = quote.upper()
     wordList = quote.split()
 
+    word_list(wordList)
+
+
+def word_list(wordList):
+    length = 0
+    longest = 0
+
     for i in range(0, len(wordList)):
         checked = palindrome(wordList[i])
         if checked:
-            print(wordList[i])
+            checkLenght = len(wordList[i])
+            if checkLenght >= length:
+                length = checkLenght
+                longest = i
         else:
             continue
+
+    print(wordList[longest])
 
 
 
