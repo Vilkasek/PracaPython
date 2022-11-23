@@ -49,3 +49,27 @@ def func_while(suma):
     print(suma)
 
 func_while(0)
+
+def fib_pow():
+    n = int(input("Podaj liczbę: "))
+
+    a = 0
+    b = 1
+
+    for i in range(0, n+1):
+        print("Fibonacci", i, b)
+        
+        b += a
+        a = b - a
+    
+    num = int(input("Podaj liczbę: "))
+    n = int(input("A do jakiej potęgi chcesz podnieść? "))
+    power = 0
+    
+    for i in range(0, n+1):
+        power = num ** i
+        print(power)
+
+fib_pow()
+
+
