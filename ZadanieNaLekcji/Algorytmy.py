@@ -2,14 +2,15 @@ import random
 
 
 def main():
-    
+
     tab = []
 
     fill(tab)
 
     print(tab)
-    
-    n = int(input("Czego szukasz w tej intowej tablicy?\nPodaj liczbę: "))
+
+    n = input("Czego szukasz w tej intowej tablicy?\nPodaj liczbę: ")
+
 
     search(n, tab)
     sorting(tab)
@@ -18,8 +19,9 @@ def main():
 def fill(tab):
     for i in range(10):
         number = random.randint(0, 100)
-    
+
         tab.append(number)
+
 
 def search(n, tab):
     found = False
@@ -31,8 +33,11 @@ def search(n, tab):
         elif i + 1 >= len(tab) and found == False:
             print("Nie ma")
 
+
 def sorting(tab):
     tab.sort()
     print(tab)
 
-main()
+
+if __name__ == '__main__':
+    main()
