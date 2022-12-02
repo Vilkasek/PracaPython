@@ -3,6 +3,7 @@ length = len(quote)
 
 table = []
 
+
 def main():
     dimension = length ** (1 / 2)
     dimension = int(dimension)
@@ -24,5 +25,5 @@ def fill(t, q, d):
     pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
